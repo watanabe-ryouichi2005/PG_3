@@ -1,2 +1,84 @@
 ﻿  mian.cpp
+C:\Users\k023g\PG_3\Template.h(17,31): warning C4244: 'return': 'Type2' から 'Type1' への変換です。データが失われる可能性があります。
+          with
+          [
+              Type2=double
+          ]
+          and
+          [
+              Type1=float
+          ]
+C:\Users\k023g\PG_3\Template.h(11,1): message : クラス テンプレート メンバー関数 'Type1 TemplateClass<Type1,double>::Min(void)' のコンパイル中
+          with
+          [
+              Type1=float
+          ]
+C:\Users\k023g\PG_3\mian.cpp(21,117): message : コンパイル対象の関数 テンプレート インスタンス化 'Type1 TemplateClass<Type1,double>::Min(void)' のリファレンスを確認してください
+          with
+          [
+              Type1=float
+          ]
+C:\Users\k023g\PG_3\mian.cpp(14,51): message : コンパイル対象の クラス テンプレート インスタンス化 'TemplateClass<float,double>' のリファレンスを確認してください
+C:\Users\k023g\PG_3\Template.h(17,31): warning C4244: 'return': 'Type2' から 'Type1' への変換です。データが失われる可能性があります。
+          with
+          [
+              Type2=int
+          ]
+          and
+          [
+              Type1=float
+          ]
+C:\Users\k023g\PG_3\Template.h(11,1): message : クラス テンプレート メンバー関数 'Type1 TemplateClass<Type1,int>::Min(void)' のコンパイル中
+          with
+          [
+              Type1=float
+          ]
+C:\Users\k023g\PG_3\mian.cpp(20,108): message : コンパイル対象の関数 テンプレート インスタンス化 'Type1 TemplateClass<Type1,int>::Min(void)' のリファレンスを確認してください
+          with
+          [
+              Type1=float
+          ]
+C:\Users\k023g\PG_3\mian.cpp(13,45): message : コンパイル対象の クラス テンプレート インスタンス化 'TemplateClass<float,int>' のリファレンスを確認してください
+C:\Users\k023g\PG_3\Template.h(17,31): warning C4244: 'return': 'Type2' から 'Type1' への変換です。データが失われる可能性があります。
+          with
+          [
+              Type2=double
+          ]
+          and
+          [
+              Type1=int
+          ]
+C:\Users\k023g\PG_3\Template.h(11,1): message : クラス テンプレート メンバー関数 'Type1 TemplateClass<Type1,double>::Min(void)' のコンパイル中
+          with
+          [
+              Type1=int
+          ]
+C:\Users\k023g\PG_3\mian.cpp(19,111): message : コンパイル対象の関数 テンプレート インスタンス化 'Type1 TemplateClass<Type1,double>::Min(void)' のリファレンスを確認してください
+          with
+          [
+              Type1=int
+          ]
+C:\Users\k023g\PG_3\mian.cpp(12,47): message : コンパイル対象の クラス テンプレート インスタンス化 'TemplateClass<int,double>' のリファレンスを確認してください
+C:\Users\k023g\PG_3\Template.h(17,31): warning C4244: 'return': 'Type2' から 'Type1' への変換です。データが失われる可能性があります。
+          with
+          [
+              Type2=float
+          ]
+          and
+          [
+              Type1=int
+          ]
+C:\Users\k023g\PG_3\Template.h(11,1): message : クラス テンプレート メンバー関数 'Type1 TemplateClass<Type1,float>::Min(void)' のコンパイル中
+          with
+          [
+              Type1=int
+          ]
+C:\Users\k023g\PG_3\mian.cpp(18,110): message : コンパイル対象の関数 テンプレート インスタンス化 'Type1 TemplateClass<Type1,float>::Min(void)' のリファレンスを確認してください
+          with
+          [
+              Type1=int
+          ]
+C:\Users\k023g\PG_3\mian.cpp(11,45): message : コンパイル対象の クラス テンプレート インスタンス化 'TemplateClass<int,float>' のリファレンスを確認してください
+  Template.cpp
+  コードを生成中...
   PG_3_02-03課題.vcxproj -> C:\Users\k023g\PG_3\x64\Debug\PG_3_02-03課題.exe
