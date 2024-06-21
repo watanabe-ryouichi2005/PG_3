@@ -1,39 +1,59 @@
-﻿#include<stdio.h>
-
+﻿#include <stdio.h>
 
 class Parent
 {
 public:
-	 virtual void Voice() {
-		printf("あにまる¥n");
-	};
+	virtual void Size() = 0;
+	virtual void Draw() = 0;
+
+protected:
+	float size;
+	float radius;
 };
 
-class ChildA : public Parent
+class Circle :public Parent
 {
 public:
-	void Voice() {
-		printf("子供Aっす\n");
-	};
+	void Size();
+	void Draw() { printf("面積 %f\n", size); };
 };
 
-class ChildB : public Parent
+class Square :public Parent
 {
 public:
-	void Voice() {
-		printf("子供Bっす\n");
-	};
+	void Size() override;
+	void Draw() { printf("面積 %f\n", size); };
 };
+
+void Parent::Size() {}
+
+void Circle::Size()
+{
+	radius = 5.0f;
+	printf("円の半径 %f\n", radius);
+	size = radius * radius * 3.14f;
+}
+
+
+void Square::Size()
+{
+	radius = 5.0f;
+	printf("矩形の半径 %f\n", radius);
+	size = radius * 2.0f * radius * 2.0f;
+}
 
 int main(void) {
 
-	Parent* animal[2] = { new ChildA,new ChildB };
+	Parent *ishape[2] = { new Circle ,new Square };
 
-	animal[0]->Voice();
-	animal[1]->Voice();
+	ishape[0]->Size();
+	ishape[1]->Size();
 
-	delete animal[0];
-	delete animal[1];
+	ishape[0]->Draw();
+	ishape[1]->Draw();
+
+	delete ishape[0];
+	delete ishape[1];
 
 	return 0;
 }
